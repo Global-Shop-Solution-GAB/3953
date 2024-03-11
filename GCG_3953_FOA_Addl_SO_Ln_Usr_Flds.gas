@@ -1,0 +1,1258 @@
+Program.Sub.ScreenSU.Start
+Gui.SS_Form1..Create
+Gui.SS_Form1..Caption("Sale Order Review")
+Gui.SS_Form1..Size(15105,7980)
+Gui.SS_Form1..Position(0,0)
+Gui.SS_Form1..AlwaysOnTop(False)
+Gui.SS_Form1..FontName("Arial")
+Gui.SS_Form1..FontSize(8)
+Gui.SS_Form1..ForeColor(0)
+Gui.SS_Form1..Backcolor(-2147483633)
+Gui.SS_Form1..ControlBox(True)
+Gui.SS_Form1..MaxButton(False)
+Gui.SS_Form1..MinButton(False)
+Gui.SS_Form1..MousePointer(0)
+Gui.SS_Form1..Moveable(True)
+Gui.SS_Form1..Sizeable(False)
+Gui.SS_Form1..ShowInTaskBar(True)
+Gui.SS_Form1..TitleBar(True)
+Gui.SS_Form1..Event(unload,ss_form1_unload)
+Gui.SS_Form1.lbl1.Create(label)
+Gui.SS_Form1.lbl1.Caption("Department")
+Gui.SS_Form1.lbl1.Visible(True)
+Gui.SS_Form1.lbl1.Size(1725,425)
+Gui.SS_Form1.lbl1.Zorder(1)
+Gui.SS_Form1.lbl1.Position(100,135)
+Gui.SS_Form1.lbl1.Enabled(True)
+Gui.SS_Form1.lbl1.Alignment(0)
+Gui.SS_Form1.lbl1.FontName("Arial")
+Gui.SS_Form1.lbl1.FontSize(14)
+Gui.SS_Form1.lbl1.Backcolor(-2147483633)
+Gui.SS_Form1.lbl1.BackStyle(0)
+Gui.SS_Form1.lbl1.Tooltip("")
+Gui.SS_Form1.lbl1.ControlGroup(0)
+Gui.SS_Form1.lbl2.Create(label)
+Gui.SS_Form1.lbl2.Caption("Approved")
+Gui.SS_Form1.lbl2.Visible(True)
+Gui.SS_Form1.lbl2.Size(1800,365)
+Gui.SS_Form1.lbl2.Zorder(1)
+Gui.SS_Form1.lbl2.Position(2250,135)
+Gui.SS_Form1.lbl2.Enabled(True)
+Gui.SS_Form1.lbl2.Alignment(0)
+Gui.SS_Form1.lbl2.FontName("Arial")
+Gui.SS_Form1.lbl2.FontSize(14)
+Gui.SS_Form1.lbl2.Backcolor(-2147483633)
+Gui.SS_Form1.lbl2.BackStyle(0)
+Gui.SS_Form1.lbl2.Tooltip("")
+Gui.SS_Form1.lbl2.ControlGroup(0)
+Gui.SS_Form1.lbl3.Create(label)
+Gui.SS_Form1.lbl3.Caption("User")
+Gui.SS_Form1.lbl3.Visible(True)
+Gui.SS_Form1.lbl3.Size(1800,350)
+Gui.SS_Form1.lbl3.Zorder(1)
+Gui.SS_Form1.lbl3.Position(4085,135)
+Gui.SS_Form1.lbl3.Enabled(True)
+Gui.SS_Form1.lbl3.Alignment(0)
+Gui.SS_Form1.lbl3.FontName("Arial")
+Gui.SS_Form1.lbl3.FontSize(14)
+Gui.SS_Form1.lbl3.Backcolor(-2147483633)
+Gui.SS_Form1.lbl3.BackStyle(0)
+Gui.SS_Form1.lbl3.Tooltip("")
+Gui.SS_Form1.lbl3.ControlGroup(0)
+Gui.SS_Form1.lbl4.Create(label)
+Gui.SS_Form1.lbl4.Caption("Date")
+Gui.SS_Form1.lbl4.Visible(True)
+Gui.SS_Form1.lbl4.Size(1800,380)
+Gui.SS_Form1.lbl4.Zorder(1)
+Gui.SS_Form1.lbl4.Position(5500,135)
+Gui.SS_Form1.lbl4.Enabled(True)
+Gui.SS_Form1.lbl4.Alignment(0)
+Gui.SS_Form1.lbl4.FontName("Arial")
+Gui.SS_Form1.lbl4.FontSize(14)
+Gui.SS_Form1.lbl4.Backcolor(-2147483633)
+Gui.SS_Form1.lbl4.BackStyle(0)
+Gui.SS_Form1.lbl4.Tooltip("")
+Gui.SS_Form1.lbl4.ControlGroup(0)
+Gui.SS_Form1.lbl5.Create(label)
+Gui.SS_Form1.lbl5.Caption("Notes")
+Gui.SS_Form1.lbl5.Visible(True)
+Gui.SS_Form1.lbl5.Size(1800,395)
+Gui.SS_Form1.lbl5.Zorder(1)
+Gui.SS_Form1.lbl5.Position(10340,135)
+Gui.SS_Form1.lbl5.Enabled(True)
+Gui.SS_Form1.lbl5.Alignment(0)
+Gui.SS_Form1.lbl5.FontName("Arial")
+Gui.SS_Form1.lbl5.FontSize(14)
+Gui.SS_Form1.lbl5.Backcolor(-2147483633)
+Gui.SS_Form1.lbl5.BackStyle(0)
+Gui.SS_Form1.lbl5.Tooltip("")
+Gui.SS_Form1.lbl5.ControlGroup(0)
+Gui.SS_Form1.lbl6.Create(label)
+Gui.SS_Form1.lbl6.Caption("Customer Service")
+Gui.SS_Form1.lbl6.Visible(True)
+Gui.SS_Form1.lbl6.Size(1965,380)
+Gui.SS_Form1.lbl6.Zorder(1)
+Gui.SS_Form1.lbl6.Position(100,675)
+Gui.SS_Form1.lbl6.Enabled(True)
+Gui.SS_Form1.lbl6.Alignment(0)
+Gui.SS_Form1.lbl6.FontName("Arial")
+Gui.SS_Form1.lbl6.FontSize(12)
+Gui.SS_Form1.lbl6.Backcolor(-2147483633)
+Gui.SS_Form1.lbl6.BackStyle(0)
+Gui.SS_Form1.lbl6.Tooltip("")
+Gui.SS_Form1.lbl6.ControlGroup(0)
+Gui.SS_Form1.chkCSApproved.Create(checkbox)
+Gui.SS_Form1.chkCSApproved.Alignment(0)
+Gui.SS_Form1.chkCSApproved.Caption("")
+Gui.SS_Form1.chkCSApproved.Visible(True)
+Gui.SS_Form1.chkCSApproved.Size(300,300)
+Gui.SS_Form1.chkCSApproved.Zorder(0)
+Gui.SS_Form1.chkCSApproved.Position(2750,675)
+Gui.SS_Form1.chkCSApproved.Enabled(True)
+Gui.SS_Form1.chkCSApproved.FontName("Arial")
+Gui.SS_Form1.chkCSApproved.FontSize(8)
+Gui.SS_Form1.chkCSApproved.TabStop(True)
+Gui.SS_Form1.chkCSApproved.TabIndex(1)
+Gui.SS_Form1.chkCSApproved.Tooltip("")
+Gui.SS_Form1.chkCSApproved.ControlGroup(0)
+Gui.SS_Form1.chkCSApproved.DefaultValue("")
+Gui.SS_Form1.chkCSApproved.Event(click,chkcsapproved_click)
+Gui.SS_Form1.txtCSUser.Create(textbox)
+Gui.SS_Form1.txtCSUser.Text("")
+Gui.SS_Form1.txtCSUser.Visible(True)
+Gui.SS_Form1.txtCSUser.Size(1035,330)
+Gui.SS_Form1.txtCSUser.Zorder(0)
+Gui.SS_Form1.txtCSUser.Position(3890,675)
+Gui.SS_Form1.txtCSUser.Enabled(True)
+Gui.SS_Form1.txtCSUser.Alignment(0)
+Gui.SS_Form1.txtCSUser.FontName("Arial")
+Gui.SS_Form1.txtCSUser.FontSize(8)
+Gui.SS_Form1.txtCSUser.Backcolor(16777215)
+Gui.SS_Form1.txtCSUser.BorderStyle(1)
+Gui.SS_Form1.txtCSUser.MaxLength(8)
+Gui.SS_Form1.txtCSUser.TabStop(True)
+Gui.SS_Form1.txtCSUser.TabIndex(2)
+Gui.SS_Form1.txtCSUser.Tooltip("")
+Gui.SS_Form1.txtCSUser.ControlGroup(0)
+Gui.SS_Form1.txtCSUser.DefaultValue("")
+Gui.SS_Form1.dtpCSDate.Create(datepicker)
+Gui.SS_Form1.dtpCSDate.Visible(True)
+Gui.SS_Form1.dtpCSDate.Size(1380,345)
+Gui.SS_Form1.dtpCSDate.Zorder(0)
+Gui.SS_Form1.dtpCSDate.Position(5295,675)
+Gui.SS_Form1.dtpCSDate.Enabled(True)
+Gui.SS_Form1.dtpCSDate.Checkbox(False)
+Gui.SS_Form1.dtpCSDate.TabStop(True)
+Gui.SS_Form1.dtpCSDate.TabIndex(3)
+Gui.SS_Form1.dtpCSDate.Tooltip("")
+Gui.SS_Form1.dtpCSDate.ControlGroup(0)
+Gui.SS_Form1.dtpCSDate.DefaultValue("01/01/1900")
+Gui.SS_Form1.mltCSNotes.Create(textboxm)
+Gui.SS_Form1.mltCSNotes.Visible(True)
+Gui.SS_Form1.mltCSNotes.Size(7170,915)
+Gui.SS_Form1.mltCSNotes.Zorder(0)
+Gui.SS_Form1.mltCSNotes.Position(7415,675)
+Gui.SS_Form1.mltCSNotes.Enabled(True)
+Gui.SS_Form1.mltCSNotes.Alignment(0)
+Gui.SS_Form1.mltCSNotes.FontName("Arial")
+Gui.SS_Form1.mltCSNotes.FontSize(8)
+Gui.SS_Form1.mltCSNotes.Backcolor(-2147483643)
+Gui.SS_Form1.mltCSNotes.BorderStyle(1)
+Gui.SS_Form1.mltCSNotes.MaxLength(0)
+Gui.SS_Form1.mltCSNotes.NumericOnly(0)
+Gui.SS_Form1.mltCSNotes.TabStop(True)
+Gui.SS_Form1.mltCSNotes.TabIndex(4)
+Gui.SS_Form1.mltCSNotes.Text("")
+Gui.SS_Form1.mltCSNotes.Tooltip("")
+Gui.SS_Form1.mltCSNotes.ControlGroup(0)
+Gui.SS_Form1.mltCSNotes.DefaultValue("")
+Gui.SS_Form1.chkQApproved.Create(checkbox)
+Gui.SS_Form1.chkQApproved.Alignment(0)
+Gui.SS_Form1.chkQApproved.Caption("")
+Gui.SS_Form1.chkQApproved.Visible(True)
+Gui.SS_Form1.chkQApproved.Size(375,300)
+Gui.SS_Form1.chkQApproved.Zorder(0)
+Gui.SS_Form1.chkQApproved.Position(2750,1685)
+Gui.SS_Form1.chkQApproved.Enabled(True)
+Gui.SS_Form1.chkQApproved.FontName("Arial")
+Gui.SS_Form1.chkQApproved.FontSize(8)
+Gui.SS_Form1.chkQApproved.TabStop(True)
+Gui.SS_Form1.chkQApproved.TabIndex(5)
+Gui.SS_Form1.chkQApproved.Tooltip("")
+Gui.SS_Form1.chkQApproved.ControlGroup(0)
+Gui.SS_Form1.chkQApproved.DefaultValue("")
+Gui.SS_Form1.chkQApproved.Event(click,chkqapproved_click)
+Gui.SS_Form1.txtQUser.Create(textbox)
+Gui.SS_Form1.txtQUser.Text("")
+Gui.SS_Form1.txtQUser.Visible(True)
+Gui.SS_Form1.txtQUser.Size(1035,330)
+Gui.SS_Form1.txtQUser.Zorder(0)
+Gui.SS_Form1.txtQUser.Position(3890,1685)
+Gui.SS_Form1.txtQUser.Enabled(True)
+Gui.SS_Form1.txtQUser.Alignment(0)
+Gui.SS_Form1.txtQUser.FontName("Arial")
+Gui.SS_Form1.txtQUser.FontSize(8)
+Gui.SS_Form1.txtQUser.Backcolor(16777215)
+Gui.SS_Form1.txtQUser.BorderStyle(1)
+Gui.SS_Form1.txtQUser.MaxLength(8)
+Gui.SS_Form1.txtQUser.TabStop(True)
+Gui.SS_Form1.txtQUser.TabIndex(6)
+Gui.SS_Form1.txtQUser.Tooltip("")
+Gui.SS_Form1.txtQUser.ControlGroup(0)
+Gui.SS_Form1.txtQUser.DefaultValue("")
+Gui.SS_Form1.dtpQDate.Create(datepicker)
+Gui.SS_Form1.dtpQDate.Visible(True)
+Gui.SS_Form1.dtpQDate.Size(1380,345)
+Gui.SS_Form1.dtpQDate.Zorder(0)
+Gui.SS_Form1.dtpQDate.Position(5295,1685)
+Gui.SS_Form1.dtpQDate.Enabled(True)
+Gui.SS_Form1.dtpQDate.Checkbox(False)
+Gui.SS_Form1.dtpQDate.TabStop(True)
+Gui.SS_Form1.dtpQDate.TabIndex(7)
+Gui.SS_Form1.dtpQDate.Tooltip("")
+Gui.SS_Form1.dtpQDate.ControlGroup(0)
+Gui.SS_Form1.dtpQDate.DefaultValue("01/01/1900")
+Gui.SS_Form1.mltQNotes.Create(textboxm)
+Gui.SS_Form1.mltQNotes.Visible(True)
+Gui.SS_Form1.mltQNotes.Size(7170,915)
+Gui.SS_Form1.mltQNotes.Zorder(0)
+Gui.SS_Form1.mltQNotes.Position(7415,1685)
+Gui.SS_Form1.mltQNotes.Enabled(True)
+Gui.SS_Form1.mltQNotes.Alignment(0)
+Gui.SS_Form1.mltQNotes.FontName("Arial")
+Gui.SS_Form1.mltQNotes.FontSize(8)
+Gui.SS_Form1.mltQNotes.Backcolor(-2147483643)
+Gui.SS_Form1.mltQNotes.BorderStyle(1)
+Gui.SS_Form1.mltQNotes.MaxLength(0)
+Gui.SS_Form1.mltQNotes.NumericOnly(0)
+Gui.SS_Form1.mltQNotes.TabStop(True)
+Gui.SS_Form1.mltQNotes.TabIndex(8)
+Gui.SS_Form1.mltQNotes.Text("")
+Gui.SS_Form1.mltQNotes.Tooltip("")
+Gui.SS_Form1.mltQNotes.ControlGroup(0)
+Gui.SS_Form1.mltQNotes.DefaultValue("")
+Gui.SS_Form1.lbl8.Create(label)
+Gui.SS_Form1.lbl8.Caption("Engineering")
+Gui.SS_Form1.lbl8.Visible(True)
+Gui.SS_Form1.lbl8.Size(1800,395)
+Gui.SS_Form1.lbl8.Zorder(1)
+Gui.SS_Form1.lbl8.Position(100,2650)
+Gui.SS_Form1.lbl8.Enabled(True)
+Gui.SS_Form1.lbl8.Alignment(0)
+Gui.SS_Form1.lbl8.FontName("Arial")
+Gui.SS_Form1.lbl8.FontSize(12)
+Gui.SS_Form1.lbl8.Backcolor(-2147483633)
+Gui.SS_Form1.lbl8.BackStyle(0)
+Gui.SS_Form1.lbl8.Tooltip("")
+Gui.SS_Form1.lbl8.ControlGroup(0)
+Gui.SS_Form1.lbl9.Create(label)
+Gui.SS_Form1.lbl9.Caption("Quality")
+Gui.SS_Form1.lbl9.Visible(True)
+Gui.SS_Form1.lbl9.Size(1965,380)
+Gui.SS_Form1.lbl9.Zorder(1)
+Gui.SS_Form1.lbl9.Position(100,1685)
+Gui.SS_Form1.lbl9.Enabled(True)
+Gui.SS_Form1.lbl9.Alignment(0)
+Gui.SS_Form1.lbl9.FontName("Arial")
+Gui.SS_Form1.lbl9.FontSize(12)
+Gui.SS_Form1.lbl9.Backcolor(-2147483633)
+Gui.SS_Form1.lbl9.BackStyle(0)
+Gui.SS_Form1.lbl9.Tooltip("")
+Gui.SS_Form1.lbl9.ControlGroup(0)
+Gui.SS_Form1.mltENotes.Create(textboxm)
+Gui.SS_Form1.mltENotes.Visible(True)
+Gui.SS_Form1.mltENotes.Size(7170,915)
+Gui.SS_Form1.mltENotes.Zorder(0)
+Gui.SS_Form1.mltENotes.Position(7415,2660)
+Gui.SS_Form1.mltENotes.Enabled(True)
+Gui.SS_Form1.mltENotes.Alignment(0)
+Gui.SS_Form1.mltENotes.FontName("Arial")
+Gui.SS_Form1.mltENotes.FontSize(8)
+Gui.SS_Form1.mltENotes.Backcolor(-2147483643)
+Gui.SS_Form1.mltENotes.BorderStyle(1)
+Gui.SS_Form1.mltENotes.MaxLength(0)
+Gui.SS_Form1.mltENotes.NumericOnly(0)
+Gui.SS_Form1.mltENotes.TabStop(True)
+Gui.SS_Form1.mltENotes.TabIndex(12)
+Gui.SS_Form1.mltENotes.Text("")
+Gui.SS_Form1.mltENotes.Tooltip("")
+Gui.SS_Form1.mltENotes.ControlGroup(0)
+Gui.SS_Form1.mltENotes.DefaultValue("")
+Gui.SS_Form1.dtpEDate.Create(datepicker)
+Gui.SS_Form1.dtpEDate.Visible(True)
+Gui.SS_Form1.dtpEDate.Size(1380,345)
+Gui.SS_Form1.dtpEDate.Zorder(0)
+Gui.SS_Form1.dtpEDate.Position(5295,2660)
+Gui.SS_Form1.dtpEDate.Enabled(True)
+Gui.SS_Form1.dtpEDate.Checkbox(False)
+Gui.SS_Form1.dtpEDate.TabStop(True)
+Gui.SS_Form1.dtpEDate.TabIndex(11)
+Gui.SS_Form1.dtpEDate.Tooltip("")
+Gui.SS_Form1.dtpEDate.ControlGroup(0)
+Gui.SS_Form1.dtpEDate.DefaultValue("01/01/1900")
+Gui.SS_Form1.txtEUser.Create(textbox)
+Gui.SS_Form1.txtEUser.Text("")
+Gui.SS_Form1.txtEUser.Visible(True)
+Gui.SS_Form1.txtEUser.Size(1035,330)
+Gui.SS_Form1.txtEUser.Zorder(0)
+Gui.SS_Form1.txtEUser.Position(3890,2650)
+Gui.SS_Form1.txtEUser.Enabled(True)
+Gui.SS_Form1.txtEUser.Alignment(0)
+Gui.SS_Form1.txtEUser.FontName("Arial")
+Gui.SS_Form1.txtEUser.FontSize(8)
+Gui.SS_Form1.txtEUser.Backcolor(16777215)
+Gui.SS_Form1.txtEUser.BorderStyle(1)
+Gui.SS_Form1.txtEUser.MaxLength(8)
+Gui.SS_Form1.txtEUser.TabStop(True)
+Gui.SS_Form1.txtEUser.TabIndex(10)
+Gui.SS_Form1.txtEUser.Tooltip("")
+Gui.SS_Form1.txtEUser.ControlGroup(0)
+Gui.SS_Form1.txtEUser.DefaultValue("")
+Gui.SS_Form1.chkEApproved.Create(checkbox)
+Gui.SS_Form1.chkEApproved.Alignment(0)
+Gui.SS_Form1.chkEApproved.Caption("")
+Gui.SS_Form1.chkEApproved.Visible(True)
+Gui.SS_Form1.chkEApproved.Size(375,300)
+Gui.SS_Form1.chkEApproved.Zorder(0)
+Gui.SS_Form1.chkEApproved.Position(2750,2650)
+Gui.SS_Form1.chkEApproved.Enabled(True)
+Gui.SS_Form1.chkEApproved.FontName("Arial")
+Gui.SS_Form1.chkEApproved.FontSize(8)
+Gui.SS_Form1.chkEApproved.TabStop(True)
+Gui.SS_Form1.chkEApproved.TabIndex(9)
+Gui.SS_Form1.chkEApproved.Tooltip("")
+Gui.SS_Form1.chkEApproved.ControlGroup(0)
+Gui.SS_Form1.chkEApproved.DefaultValue("")
+Gui.SS_Form1.chkEApproved.Event(click,chkeapproved_click)
+Gui.SS_Form1.lbl10.Create(label)
+Gui.SS_Form1.lbl10.Caption("Purchasing")
+Gui.SS_Form1.lbl10.Visible(True)
+Gui.SS_Form1.lbl10.Size(1800,395)
+Gui.SS_Form1.lbl10.Zorder(1)
+Gui.SS_Form1.lbl10.Position(100,3710)
+Gui.SS_Form1.lbl10.Enabled(True)
+Gui.SS_Form1.lbl10.Alignment(0)
+Gui.SS_Form1.lbl10.FontName("Arial")
+Gui.SS_Form1.lbl10.FontSize(12)
+Gui.SS_Form1.lbl10.Backcolor(-2147483633)
+Gui.SS_Form1.lbl10.BackStyle(0)
+Gui.SS_Form1.lbl10.Tooltip("")
+Gui.SS_Form1.lbl10.ControlGroup(0)
+Gui.SS_Form1.mltPurNotes.Create(textboxm)
+Gui.SS_Form1.mltPurNotes.Visible(True)
+Gui.SS_Form1.mltPurNotes.Size(7170,915)
+Gui.SS_Form1.mltPurNotes.Zorder(0)
+Gui.SS_Form1.mltPurNotes.Position(7400,3710)
+Gui.SS_Form1.mltPurNotes.Enabled(True)
+Gui.SS_Form1.mltPurNotes.Alignment(0)
+Gui.SS_Form1.mltPurNotes.FontName("Arial")
+Gui.SS_Form1.mltPurNotes.FontSize(8)
+Gui.SS_Form1.mltPurNotes.Backcolor(-2147483643)
+Gui.SS_Form1.mltPurNotes.BorderStyle(1)
+Gui.SS_Form1.mltPurNotes.MaxLength(0)
+Gui.SS_Form1.mltPurNotes.NumericOnly(0)
+Gui.SS_Form1.mltPurNotes.TabStop(True)
+Gui.SS_Form1.mltPurNotes.TabIndex(16)
+Gui.SS_Form1.mltPurNotes.Text("")
+Gui.SS_Form1.mltPurNotes.Tooltip("")
+Gui.SS_Form1.mltPurNotes.ControlGroup(0)
+Gui.SS_Form1.mltPurNotes.DefaultValue("")
+Gui.SS_Form1.dtpPurDate.Create(datepicker)
+Gui.SS_Form1.dtpPurDate.Visible(True)
+Gui.SS_Form1.dtpPurDate.Size(1380,345)
+Gui.SS_Form1.dtpPurDate.Zorder(0)
+Gui.SS_Form1.dtpPurDate.Position(5295,3710)
+Gui.SS_Form1.dtpPurDate.Enabled(True)
+Gui.SS_Form1.dtpPurDate.Checkbox(False)
+Gui.SS_Form1.dtpPurDate.TabStop(True)
+Gui.SS_Form1.dtpPurDate.TabIndex(15)
+Gui.SS_Form1.dtpPurDate.Tooltip("")
+Gui.SS_Form1.dtpPurDate.ControlGroup(0)
+Gui.SS_Form1.dtpPurDate.DefaultValue("01/01/1900")
+Gui.SS_Form1.txtPurUser.Create(textbox)
+Gui.SS_Form1.txtPurUser.Text("")
+Gui.SS_Form1.txtPurUser.Visible(True)
+Gui.SS_Form1.txtPurUser.Size(1035,330)
+Gui.SS_Form1.txtPurUser.Zorder(0)
+Gui.SS_Form1.txtPurUser.Position(3890,3710)
+Gui.SS_Form1.txtPurUser.Enabled(True)
+Gui.SS_Form1.txtPurUser.Alignment(0)
+Gui.SS_Form1.txtPurUser.FontName("Arial")
+Gui.SS_Form1.txtPurUser.FontSize(8)
+Gui.SS_Form1.txtPurUser.Backcolor(16777215)
+Gui.SS_Form1.txtPurUser.BorderStyle(1)
+Gui.SS_Form1.txtPurUser.MaxLength(8)
+Gui.SS_Form1.txtPurUser.TabStop(True)
+Gui.SS_Form1.txtPurUser.TabIndex(14)
+Gui.SS_Form1.txtPurUser.Tooltip("")
+Gui.SS_Form1.txtPurUser.ControlGroup(0)
+Gui.SS_Form1.txtPurUser.DefaultValue("")
+Gui.SS_Form1.chkPurApproved.Create(checkbox)
+Gui.SS_Form1.chkPurApproved.Alignment(0)
+Gui.SS_Form1.chkPurApproved.Caption("")
+Gui.SS_Form1.chkPurApproved.Visible(True)
+Gui.SS_Form1.chkPurApproved.Size(375,300)
+Gui.SS_Form1.chkPurApproved.Zorder(0)
+Gui.SS_Form1.chkPurApproved.Position(2750,3710)
+Gui.SS_Form1.chkPurApproved.Enabled(True)
+Gui.SS_Form1.chkPurApproved.FontName("Arial")
+Gui.SS_Form1.chkPurApproved.FontSize(8)
+Gui.SS_Form1.chkPurApproved.TabStop(True)
+Gui.SS_Form1.chkPurApproved.TabIndex(13)
+Gui.SS_Form1.chkPurApproved.Tooltip("")
+Gui.SS_Form1.chkPurApproved.ControlGroup(0)
+Gui.SS_Form1.chkPurApproved.DefaultValue("")
+Gui.SS_Form1.chkPurApproved.Event(click,chkpurapproved_click)
+Gui.SS_Form1.lbl11.Create(label)
+Gui.SS_Form1.lbl11.Caption("Process Development")
+Gui.SS_Form1.lbl11.Visible(True)
+Gui.SS_Form1.lbl11.Size(2550,395)
+Gui.SS_Form1.lbl11.Zorder(1)
+Gui.SS_Form1.lbl11.Position(100,4770)
+Gui.SS_Form1.lbl11.Enabled(True)
+Gui.SS_Form1.lbl11.Alignment(0)
+Gui.SS_Form1.lbl11.FontName("Arial")
+Gui.SS_Form1.lbl11.FontSize(12)
+Gui.SS_Form1.lbl11.Backcolor(-2147483633)
+Gui.SS_Form1.lbl11.BackStyle(0)
+Gui.SS_Form1.lbl11.Tooltip("")
+Gui.SS_Form1.lbl11.ControlGroup(0)
+Gui.SS_Form1.mltPDNotes.Create(textboxm)
+Gui.SS_Form1.mltPDNotes.Visible(True)
+Gui.SS_Form1.mltPDNotes.Size(7170,915)
+Gui.SS_Form1.mltPDNotes.Zorder(0)
+Gui.SS_Form1.mltPDNotes.Position(7400,4770)
+Gui.SS_Form1.mltPDNotes.Enabled(True)
+Gui.SS_Form1.mltPDNotes.Alignment(0)
+Gui.SS_Form1.mltPDNotes.FontName("Arial")
+Gui.SS_Form1.mltPDNotes.FontSize(8)
+Gui.SS_Form1.mltPDNotes.Backcolor(-2147483643)
+Gui.SS_Form1.mltPDNotes.BorderStyle(1)
+Gui.SS_Form1.mltPDNotes.MaxLength(0)
+Gui.SS_Form1.mltPDNotes.NumericOnly(0)
+Gui.SS_Form1.mltPDNotes.TabStop(True)
+Gui.SS_Form1.mltPDNotes.TabIndex(20)
+Gui.SS_Form1.mltPDNotes.Text("")
+Gui.SS_Form1.mltPDNotes.Tooltip("")
+Gui.SS_Form1.mltPDNotes.ControlGroup(0)
+Gui.SS_Form1.mltPDNotes.DefaultValue("")
+Gui.SS_Form1.mltSchedNotes.Create(textboxm)
+Gui.SS_Form1.mltSchedNotes.Visible(True)
+Gui.SS_Form1.mltSchedNotes.Size(7170,915)
+Gui.SS_Form1.mltSchedNotes.Zorder(0)
+Gui.SS_Form1.mltSchedNotes.Position(7400,5800)
+Gui.SS_Form1.mltSchedNotes.Enabled(True)
+Gui.SS_Form1.mltSchedNotes.Alignment(0)
+Gui.SS_Form1.mltSchedNotes.FontName("Arial")
+Gui.SS_Form1.mltSchedNotes.FontSize(8)
+Gui.SS_Form1.mltSchedNotes.Backcolor(-2147483643)
+Gui.SS_Form1.mltSchedNotes.BorderStyle(1)
+Gui.SS_Form1.mltSchedNotes.MaxLength(0)
+Gui.SS_Form1.mltSchedNotes.NumericOnly(0)
+Gui.SS_Form1.mltSchedNotes.TabStop(True)
+Gui.SS_Form1.mltSchedNotes.TabIndex(24)
+Gui.SS_Form1.mltSchedNotes.Text("")
+Gui.SS_Form1.mltSchedNotes.Tooltip("")
+Gui.SS_Form1.mltSchedNotes.ControlGroup(0)
+Gui.SS_Form1.mltSchedNotes.DefaultValue("")
+Gui.SS_Form1.lbl12.Create(label)
+Gui.SS_Form1.lbl12.Caption("Scheduling")
+Gui.SS_Form1.lbl12.Visible(True)
+Gui.SS_Form1.lbl12.Size(2550,395)
+Gui.SS_Form1.lbl12.Zorder(1)
+Gui.SS_Form1.lbl12.Position(100,5800)
+Gui.SS_Form1.lbl12.Enabled(True)
+Gui.SS_Form1.lbl12.Alignment(0)
+Gui.SS_Form1.lbl12.FontName("Arial")
+Gui.SS_Form1.lbl12.FontSize(12)
+Gui.SS_Form1.lbl12.Backcolor(-2147483633)
+Gui.SS_Form1.lbl12.BackStyle(0)
+Gui.SS_Form1.lbl12.Tooltip("")
+Gui.SS_Form1.lbl12.ControlGroup(0)
+Gui.SS_Form1.dtpPDDate.Create(datepicker)
+Gui.SS_Form1.dtpPDDate.Visible(True)
+Gui.SS_Form1.dtpPDDate.Size(1380,345)
+Gui.SS_Form1.dtpPDDate.Zorder(0)
+Gui.SS_Form1.dtpPDDate.Position(5295,4770)
+Gui.SS_Form1.dtpPDDate.Enabled(True)
+Gui.SS_Form1.dtpPDDate.Checkbox(False)
+Gui.SS_Form1.dtpPDDate.TabStop(True)
+Gui.SS_Form1.dtpPDDate.TabIndex(19)
+Gui.SS_Form1.dtpPDDate.Tooltip("")
+Gui.SS_Form1.dtpPDDate.ControlGroup(0)
+Gui.SS_Form1.dtpPDDate.DefaultValue("01/01/1900")
+Gui.SS_Form1.dtpSchedDate.Create(datepicker)
+Gui.SS_Form1.dtpSchedDate.Visible(True)
+Gui.SS_Form1.dtpSchedDate.Size(1380,345)
+Gui.SS_Form1.dtpSchedDate.Zorder(0)
+Gui.SS_Form1.dtpSchedDate.Position(5295,5800)
+Gui.SS_Form1.dtpSchedDate.Enabled(True)
+Gui.SS_Form1.dtpSchedDate.Checkbox(False)
+Gui.SS_Form1.dtpSchedDate.TabStop(True)
+Gui.SS_Form1.dtpSchedDate.TabIndex(23)
+Gui.SS_Form1.dtpSchedDate.Tooltip("")
+Gui.SS_Form1.dtpSchedDate.ControlGroup(0)
+Gui.SS_Form1.dtpSchedDate.DefaultValue("01/01/1900")
+Gui.SS_Form1.txtSchedUser.Create(textbox)
+Gui.SS_Form1.txtSchedUser.Text("")
+Gui.SS_Form1.txtSchedUser.Visible(True)
+Gui.SS_Form1.txtSchedUser.Size(1035,330)
+Gui.SS_Form1.txtSchedUser.Zorder(0)
+Gui.SS_Form1.txtSchedUser.Position(3890,5800)
+Gui.SS_Form1.txtSchedUser.Enabled(True)
+Gui.SS_Form1.txtSchedUser.Alignment(0)
+Gui.SS_Form1.txtSchedUser.FontName("Arial")
+Gui.SS_Form1.txtSchedUser.FontSize(8)
+Gui.SS_Form1.txtSchedUser.Backcolor(16777215)
+Gui.SS_Form1.txtSchedUser.BorderStyle(1)
+Gui.SS_Form1.txtSchedUser.MaxLength(8)
+Gui.SS_Form1.txtSchedUser.TabStop(True)
+Gui.SS_Form1.txtSchedUser.TabIndex(22)
+Gui.SS_Form1.txtSchedUser.Tooltip("")
+Gui.SS_Form1.txtSchedUser.ControlGroup(0)
+Gui.SS_Form1.txtSchedUser.DefaultValue("")
+Gui.SS_Form1.txtPDUser.Create(textbox)
+Gui.SS_Form1.txtPDUser.Text("")
+Gui.SS_Form1.txtPDUser.Visible(True)
+Gui.SS_Form1.txtPDUser.Size(1035,330)
+Gui.SS_Form1.txtPDUser.Zorder(0)
+Gui.SS_Form1.txtPDUser.Position(3890,4770)
+Gui.SS_Form1.txtPDUser.Enabled(True)
+Gui.SS_Form1.txtPDUser.Alignment(0)
+Gui.SS_Form1.txtPDUser.FontName("Arial")
+Gui.SS_Form1.txtPDUser.FontSize(8)
+Gui.SS_Form1.txtPDUser.Backcolor(16777215)
+Gui.SS_Form1.txtPDUser.BorderStyle(1)
+Gui.SS_Form1.txtPDUser.MaxLength(8)
+Gui.SS_Form1.txtPDUser.TabStop(True)
+Gui.SS_Form1.txtPDUser.TabIndex(18)
+Gui.SS_Form1.txtPDUser.Tooltip("")
+Gui.SS_Form1.txtPDUser.ControlGroup(0)
+Gui.SS_Form1.txtPDUser.DefaultValue("")
+Gui.SS_Form1.chkPDApproved.Create(checkbox)
+Gui.SS_Form1.chkPDApproved.Alignment(0)
+Gui.SS_Form1.chkPDApproved.Caption("")
+Gui.SS_Form1.chkPDApproved.Visible(True)
+Gui.SS_Form1.chkPDApproved.Size(375,300)
+Gui.SS_Form1.chkPDApproved.Zorder(0)
+Gui.SS_Form1.chkPDApproved.Position(2750,4770)
+Gui.SS_Form1.chkPDApproved.Enabled(True)
+Gui.SS_Form1.chkPDApproved.FontName("Arial")
+Gui.SS_Form1.chkPDApproved.FontSize(8)
+Gui.SS_Form1.chkPDApproved.TabStop(True)
+Gui.SS_Form1.chkPDApproved.TabIndex(17)
+Gui.SS_Form1.chkPDApproved.Tooltip("")
+Gui.SS_Form1.chkPDApproved.ControlGroup(0)
+Gui.SS_Form1.chkPDApproved.DefaultValue("")
+Gui.SS_Form1.chkPDApproved.Event(click,chkpdapproved_click)
+Gui.SS_Form1.chkSchedApproved.Create(checkbox)
+Gui.SS_Form1.chkSchedApproved.Alignment(0)
+Gui.SS_Form1.chkSchedApproved.Caption("")
+Gui.SS_Form1.chkSchedApproved.Visible(True)
+Gui.SS_Form1.chkSchedApproved.Size(375,300)
+Gui.SS_Form1.chkSchedApproved.Zorder(0)
+Gui.SS_Form1.chkSchedApproved.Position(2750,5800)
+Gui.SS_Form1.chkSchedApproved.Enabled(True)
+Gui.SS_Form1.chkSchedApproved.FontName("Arial")
+Gui.SS_Form1.chkSchedApproved.FontSize(8)
+Gui.SS_Form1.chkSchedApproved.TabStop(True)
+Gui.SS_Form1.chkSchedApproved.TabIndex(21)
+Gui.SS_Form1.chkSchedApproved.Tooltip("")
+Gui.SS_Form1.chkSchedApproved.ControlGroup(0)
+Gui.SS_Form1.chkSchedApproved.DefaultValue("")
+Gui.SS_Form1.chkSchedApproved.Event(click,chkschedapproved_click)
+Gui.SS_Form1.cmdSave.Create(button)
+Gui.SS_Form1.cmdSave.Caption("Save")
+Gui.SS_Form1.cmdSave.Visible(True)
+Gui.SS_Form1.cmdSave.Size(1140,450)
+Gui.SS_Form1.cmdSave.Zorder(0)
+Gui.SS_Form1.cmdSave.Position(100,6780)
+Gui.SS_Form1.cmdSave.Enabled(True)
+Gui.SS_Form1.cmdSave.FontName("Arial")
+Gui.SS_Form1.cmdSave.FontSize(8)
+Gui.SS_Form1.cmdSave.TabStop(True)
+Gui.SS_Form1.cmdSave.TabIndex(25)
+Gui.SS_Form1.cmdSave.Tooltip("")
+Gui.SS_Form1.cmdSave.ControlGroup(0)
+Gui.SS_Form1.cmdSave.DefaultValue("")
+Gui.SS_Form1.cmdSave.Event(click,cmdsave_click)
+gui.SS_Form1..minx(0)
+gui.SS_Form1..miny(0)
+
+
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+
+Variable.Global.sLine.Declare(String)
+Variable.Global.sOrder.Declare(String)
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+F.Intrinsic.Control.SetErrorHandler("Main_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+'Reference Project Description Section for Further Details
+
+F.Intrinsic.Control.If(V.Caller.Hook,=,"12010")
+	V.Passed.000210.Set("Order Review")
+F.Intrinsic.Control.ElseIf(V.Caller.Hook,=,"12430")
+	'open conneciton
+	F.ODBC.Connection!conX.OpenConnection(V.Ambient.PDSN,V.Ambient.PUser,V.Ambient.PPass)
+	'pop form
+	F.Intrinsic.String.LPad(V.Passed.000060,"0",7,V.Global.sOrder)
+	F.Intrinsic.String.LPad(V.Passed.000051,"0",3,V.Global.sLine)
+	f.Intrinsic.String.Build("{0}0",V.Global.sLine,V.Global.sline)
+	F.Intrinsic.Control.CallSub(Populate)
+	Gui.SS_Form1..Show
+F.Intrinsic.Control.ElseIf(V.Caller.Hook,=,"12242")
+	'delete line button hook
+	'open conneciton
+	F.ODBC.Connection!conX.OpenConnection(V.Ambient.PDSN,V.Ambient.PUser,V.Ambient.PPass)
+	F.Intrinsic.String.LPad(V.Passed.000060,"0",7,V.Global.sOrder)
+	F.Intrinsic.String.LPad(V.Passed.000051,"0",3,V.Global.sLine)
+	f.Intrinsic.String.Build("{0}0",V.Global.sLine,V.Global.sline)
+	F.Intrinsic.Control.CallSub(Delete_line)
+	F.Intrinsic.Control.CallSub(Ss_form1_unload)
+F.Intrinsic.Control.ElseIf(V.Caller.Hook,=,"11882")
+	'open conneciton
+	F.ODBC.Connection!conX.OpenConnection(V.Ambient.PDSN,V.Ambient.PUser,V.Ambient.PPass)
+	F.Intrinsic.String.LPad(V.Passed.000003,"0",7,V.Global.sOrder)
+	'delete the order information
+	F.Intrinsic.Control.CallSub(Delete_ord)
+	F.Intrinsic.Control.CallSub(Ss_form1_unload)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Main_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3953_FOA_Addl_SO_Ln_Usr_Flds.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Ss_form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Main.End
+
+program.sub.ss_form1_unload.start
+F.Intrinsic.Control.SetErrorHandler("ss_form1_unload_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+F.ODBC.Connection!conX.Close
+
+F.Intrinsic.Control.End
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("ss_form1_unload_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3953_FOA_Addl_SO_Ln_Usr_Flds.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.ss_form1_unload.end
+
+program.sub.chkcsapproved_click.start
+F.Intrinsic.Control.SetErrorHandler("chkcsapproved_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.iRet.Declare(Long)
+V.Local.sUser.Declare(String)
+F.Intrinsic.Control.BlockEvents
+'They Clicked the Approved Chkxbox on the Custom Service line
+F.Intrinsic.Control.If(V.Screen.SS_Form1!chkCSApproved.Value,=,1)
+	'prompt and ask do they want to approve it.
+	F.Intrinsic.UI.Msgbox("Approve Item?","Confirm Approval...",4,V.Local.iRet)
+	F.Intrinsic.Control.If(V.Local.iRet,=,6)
+		Gui.SS_Form1.txtCSUser.Text(V.Caller.User)
+		Gui.SS_Form1.dtpCSDate.Value(V.Ambient.Date)
+	F.Intrinsic.Control.Else
+		Gui.SS_Form1.chkCSApproved.Value(0)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Else
+	'meaning the unapproved it.
+	Gui.SS_Form1.txtCSUser.Text("")
+	Gui.SS_Form1.dtpCSDate.Value("01/01/1900")
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.UnBlockEvents
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("chkcsapproved_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3953_FOA_Addl_SO_Ln_Usr_Flds.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Ss_form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.chkcsapproved_click.end
+
+program.sub.chkqapproved_click.start
+F.Intrinsic.Control.SetErrorHandler("chkqapproved_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.iRet.Declare(Long)
+V.Local.sUser.Declare(String)
+F.Intrinsic.Control.BlockEvents
+'They Clicked the Approved Chkxbox on the Quality Service line
+F.Intrinsic.Control.If(V.Screen.SS_Form1!chkQApproved.Value,=,1)
+	'prompt and ask do they want to approve it.
+	F.Intrinsic.UI.Msgbox("Approve Item?","Confirm Approval...",4,V.Local.iRet)
+	F.Intrinsic.Control.If(V.Local.iRet,=,6)
+		Gui.SS_Form1.txtQUser.Text(V.Caller.User)
+		Gui.SS_Form1.dtpQDate.Value(V.Ambient.Date)
+	F.Intrinsic.Control.Else
+		Gui.SS_Form1.chkQApproved.Value(0)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Else
+	'meaning the unapproved it.
+	Gui.SS_Form1.txtQUser.Text("")
+	Gui.SS_Form1.dtpQDate.Value("01/01/1900")
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.UnBlockEvents
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("chkqapproved_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3953_FOA_Addl_SO_Ln_Usr_Flds.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Ss_form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.chkqapproved_click.end
+
+program.sub.chkeapproved_click.start
+F.Intrinsic.Control.SetErrorHandler("chkeapproved_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.iRet.Declare(Long)
+V.Local.sUser.Declare(String)
+F.Intrinsic.Control.BlockEvents
+'They Clicked the Approved Chkxbox on the Engineering line
+F.Intrinsic.Control.If(V.Screen.SS_Form1!chkEApproved.Value,=,1)
+	'prompt and ask do they want to approve it.
+	F.Intrinsic.UI.Msgbox("Approve Item?","Confirm Approval...",4,V.Local.iRet)
+	F.Intrinsic.Control.If(V.Local.iRet,=,6)
+		Gui.SS_Form1.txtEUser.Text(V.Caller.User)
+		Gui.SS_Form1.dtpEDate.Value(V.Ambient.Date)
+	F.Intrinsic.Control.Else
+		Gui.SS_Form1.chkEApproved.Value(0)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Else
+	'meaning the unapproved it.
+	Gui.SS_Form1.txtEUser.Text("")
+	Gui.SS_Form1.dtpEDate.Value("01/01/1900")
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.UnBlockEvents
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("chkeapproved_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3953_FOA_Addl_SO_Ln_Usr_Flds.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Ss_form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.chkeapproved_click.end
+
+program.sub.chkpurapproved_click.start
+F.Intrinsic.Control.SetErrorHandler("chkpurapproved_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.iRet.Declare(Long)
+V.Local.sUser.Declare(String)
+F.Intrinsic.Control.BlockEvents
+'They Clicked the Approved Chkxbox on the Custom Service line
+F.Intrinsic.Control.If(V.Screen.SS_Form1!chkPURApproved.Value,=,1)
+	'prompt and ask do they want to approve it.
+	F.Intrinsic.UI.Msgbox("Approve Item?","Confirm Approval...",4,V.Local.iRet)
+	F.Intrinsic.Control.If(V.Local.iRet,=,6)
+		Gui.SS_Form1.txtPURUser.Text(V.Caller.User)
+		Gui.SS_Form1.dtpPURDate.Value(V.Ambient.Date)
+	F.Intrinsic.Control.Else
+		Gui.SS_Form1.chkPURApproved.Value(0)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Else
+	'meaning the unapproved it.
+	Gui.SS_Form1.txtPURUser.Text("")
+	Gui.SS_Form1.dtpPURDate.Value("01/01/1900")
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.UnBlockEvents
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("chkpurapproved_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3953_FOA_Addl_SO_Ln_Usr_Flds.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Ss_form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.chkpurapproved_click.end
+
+program.sub.chkpdapproved_click.start
+F.Intrinsic.Control.SetErrorHandler("chkpdapproved_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.iRet.Declare(Long)
+V.Local.sUser.Declare(String)
+F.Intrinsic.Control.BlockEvents
+'They Clicked the Approved Chkxbox on the Process Develipment line
+F.Intrinsic.Control.If(V.Screen.SS_Form1!chkPDApproved.Value,=,1)
+	'prompt and ask do they want to approve it.
+	F.Intrinsic.UI.Msgbox("Approve Item?","Confirm Approval...",4,V.Local.iRet)
+	F.Intrinsic.Control.If(V.Local.iRet,=,6)
+		Gui.SS_Form1.txtPDUser.Text(V.Caller.User)
+		Gui.SS_Form1.dtpPDDate.Value(V.Ambient.Date)
+	F.Intrinsic.Control.Else
+		Gui.SS_Form1.chkPDApproved.Value(0)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Else
+	'meaning the unapproved it.
+	Gui.SS_Form1.txtPDUser.Text("")
+	Gui.SS_Form1.dtpPDDate.Value("01/01/1900")
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.UnBlockEvents
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("chkpdapproved_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3953_FOA_Addl_SO_Ln_Usr_Flds.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.chkpdapproved_click.end
+
+program.sub.chkschedapproved_click.start
+F.Intrinsic.Control.SetErrorHandler("chkschedapproved_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.iRet.Declare(Long)
+V.Local.sUser.Declare(String)
+F.Intrinsic.Control.BlockEvents
+'They Clicked the Approved Chkxbox on the Scheduling Service line
+F.Intrinsic.Control.If(V.Screen.SS_Form1!chkSchedApproved.Value,=,1)
+	'prompt and ask do they want to approve it.
+	F.Intrinsic.UI.Msgbox("Approve Item?","Confirm Approval...",4,V.Local.iRet)
+	F.Intrinsic.Control.If(V.Local.iRet,=,6)
+		Gui.SS_Form1.txtSchedUser.Text(V.Caller.User)
+		Gui.SS_Form1.dtpSchedDate.Value(V.Ambient.Date)
+	F.Intrinsic.Control.Else
+		Gui.SS_Form1.chkSchedApproved.Value(0)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Else
+	'meaning the unapproved it.
+	Gui.SS_Form1.txtSchedUser.Text("")
+	Gui.SS_Form1.dtpSchedDate.Value("01/01/1900")
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.UnBlockEvents
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("chkschedapproved_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3953_FOA_Addl_SO_Ln_Usr_Flds.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Ss_form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.chkschedapproved_click.end
+
+Program.Sub.Populate.Start
+F.Intrinsic.Control.SetErrorHandler("Populate_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sQuery.Declare(String)
+V.Local.iC.Declare(Long)
+
+F.Intrinsic.Control.BlockEvents
+
+'set default of date to 111900 to avoid confusion
+Gui.SS_Form1.dtpCSDate.Value("01/01/1900")
+Gui.SS_Form1.dtpEDate.Value("01/01/1900")
+Gui.SS_Form1.dtpSchedDate.Value("01/01/1900")
+Gui.SS_Form1.dtpQDate.Value("01/01/1900")
+Gui.SS_Form1.dtpPDDate.Value("01/01/1900")
+Gui.SS_Form1.dtpPurDate.Value("01/01/1900")
+
+'locked the user values
+Gui.SS_Form1.txtCSUser.Locked(True)
+Gui.SS_Form1.txtEUser.Locked(True)
+Gui.SS_Form1.txtSchedUser.Locked(True)
+Gui.SS_Form1.txtQUser.Locked(True)
+Gui.SS_Form1.txtPDUser.Locked(True)
+Gui.SS_Form1.txtPurUser.Locked(True)
+
+
+
+F.Intrinsic.String.Build("Select * From GCG_3953_Addl_Flds Where SO = '{0}' And Line = '{1}' Order By Dept",V.Global.sOrder,V.Global.sLine,V.Local.sQuery)
+F.ODBC.Connection!conX.OpenLocalRecordsetRO("rst",V.local.sQuery)
+F.Intrinsic.Control.DoUntil(V.ODBC.conX!rst.EOF,=,True)
+	F.Intrinsic.Control.SelectCase(V.ODBC.conX!rst.FieldValTrim!Dept)
+		F.Intrinsic.Control.Case(1)
+			'Customer Service Dept
+			Gui.SS_Form1.chkCSApproved.Value(V.ODBC.conX!rst.FieldValTrim!Approved)
+			F.Intrinsic.Control.If(V.ODBC.conX!rst.FieldValTrim!Approved,=,True)
+				Gui.SS_Form1.txtCSUser.Text(V.ODBC.conX!rst.FieldValTrim!GS_USER)
+			F.Intrinsic.Control.EndIf
+			Gui.SS_Form1.dtpCSDate.Value(V.ODBC.conX!rst.FieldValPervasiveDate!Date_Approval)
+			Gui.SS_Form1.mltCSNotes.Text(V.ODBC.conX!rst.FieldValTrim!Comments)
+		F.Intrinsic.Control.Case(2)
+			'Quality Department 	
+			Gui.SS_Form1.chkQApproved.Value(V.ODBC.conX!rst.FieldValTrim!Approved)
+
+			F.Intrinsic.Control.If(V.ODBC.conX!rst.FieldValTrim!Approved,=,True)
+				Gui.SS_Form1.txtQUser.Text(V.ODBC.conX!rst.FieldValTrim!GS_USER)
+			F.Intrinsic.Control.EndIf
+
+			Gui.SS_Form1.dtpQDate.Value(V.ODBC.conX!rst.FieldValPervasiveDate!Date_Approval)
+			Gui.SS_Form1.mltQNotes.Text(V.ODBC.conX!rst.FieldValTrim!Comments)
+		F.Intrinsic.Control.Case(3)
+			'Engineering Department
+			Gui.SS_Form1.chkEApproved.Value(V.ODBC.conX!rst.FieldValTrim!Approved)
+
+			F.Intrinsic.Control.If(V.ODBC.conX!rst.FieldValTrim!Approved,=,True)
+				Gui.SS_Form1.txtEUser.Text(V.ODBC.conX!rst.FieldValTrim!GS_USER)
+			F.Intrinsic.Control.EndIf
+			Gui.SS_Form1.dtpEDate.Value(V.ODBC.conX!rst.FieldValPervasiveDate!Date_Approval)
+			Gui.SS_Form1.mltENotes.Text(V.ODBC.conX!rst.FieldValTrim!Comments)
+		F.Intrinsic.Control.Case(4)
+			'Purchasing Department
+			Gui.SS_Form1.chkPurApproved.Value(V.ODBC.conX!rst.FieldValTrim!Approved)
+			F.Intrinsic.Control.If(V.ODBC.conX!rst.FieldValTrim!Approved,=,True)
+				Gui.SS_Form1.txtPurUser.Text(V.ODBC.conX!rst.FieldValTrim!GS_USER)
+			F.Intrinsic.Control.EndIf
+			Gui.SS_Form1.dtpPurDate.Value(V.ODBC.conX!rst.FieldValPervasiveDate!Date_Approval)
+			Gui.SS_Form1.mltPurNotes.Text(V.ODBC.conX!rst.FieldValTrim!Comments)
+		F.Intrinsic.Control.Case(5)
+			'ProcessDevelopments
+			Gui.SS_Form1.chkPDApproved.Value(V.ODBC.conX!rst.FieldValTrim!Approved)
+			F.Intrinsic.Control.If(V.ODBC.conX!rst.FieldVal!APPROVED,=,True)
+				Gui.SS_Form1.txtPDUser.Text(V.ODBC.conX!rst.FieldValTrim!GS_USER)
+			F.Intrinsic.Control.EndIf
+			Gui.SS_Form1.dtpPDDate.Value(V.ODBC.conX!rst.FieldValPervasiveDate!Date_Approval)
+			Gui.SS_Form1.mltPDNotes.Text(V.ODBC.conX!rst.FieldValTrim!Comments)
+		F.Intrinsic.Control.Case(6)
+			'Scheduling
+			Gui.SS_Form1.chkSchedApproved.Value(V.ODBC.conX!rst.FieldValTrim!Approved)
+			F.Intrinsic.Control.If(V.ODBC.conX!rst.FieldValTrim!aPPROVED,=,True)
+				Gui.SS_Form1.txtSchedUser.Text(V.ODBC.conX!rst.FieldValTrim!GS_USER)
+			F.Intrinsic.Control.EndIf
+			Gui.SS_Form1.dtpSchedDate.Value(V.ODBC.conX!rst.FieldValPervasiveDate!Date_Approval)
+			Gui.SS_Form1.mltSchedNotes.Text(V.ODBC.conX!rst.FieldValTrim!Comments)
+	F.Intrinsic.Control.EndSelect
+	F.ODBC.conX!rst.MoveNext
+F.Intrinsic.Control.Loop
+F.ODBC.conX!rst.Close
+
+'change caption
+F.Intrinsic.String.Build("Sales Order Review {0}{0} Order: {1}    Line {2}",V.Ambient.Tab,V.Global.sOrder,V.Global.sLine.Left3,V.Local.sQuery)
+Gui.SS_Form1..Caption(V.Local.sQuery)
+
+F.Intrinsic.Control.UnBlockEvents
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Populate_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3953_FOA_Addl_SO_Ln_Usr_Flds.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Ss_form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Populate.End
+
+Program.Sub.Delete_Ord.Start
+F.Intrinsic.Control.SetErrorHandler("Delete_Ord_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sSQL.Declare(String)
+
+'Delete the custom values from the entire values. They have deleted the entire order.
+
+F.Intrinsic.String.Build("Delete From GCG_3953_Addl_Flds Where SO = '{0}'",V.Global.sOrder,V.Local.sSQL)
+F.ODBC.Connection!conX.Execute(V.Local.sSQL)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Delete_Ord_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3953_FOA_Addl_SO_Ln_Usr_Flds.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Ss_form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Delete_Ord.End
+
+Program.Sub.Delete_Line.Start
+F.Intrinsic.Control.SetErrorHandler("Delete_Line_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sSQL.Declare(String)
+
+'Delete the values for the specific line. They have deleted the line from the order.
+F.Intrinsic.String.Build("Delete From GCG_3953_Addl_Flds Where SO = '{0}' And Line ='{1}' ",V.Global.sOrder,V.Global.sline,V.Local.sSQL)
+F.ODBC.Connection!conX.Execute(V.Local.sSQL)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Delete_Line_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3953_FOA_Addl_SO_Ln_Usr_Flds.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Ss_form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Delete_Line.End
+
+program.sub.cmdsave_click.start
+F.Intrinsic.Control.SetErrorHandler("cmdsave_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sSQL.Declare(String)
+V.Local.iC.Declare(Long)
+V.Local.iUserID.Declare(Long)
+
+F.Intrinsic.Control.BlockEvents
+'maybe instead just read the screen values?
+F.Global.Security.GetUserId(V.Caller.User,V.Caller.CompanyCode,V.Local.iUserId)
+	
+F.Intrinsic.Control.For(V.Local.iC,1,6,1)
+	F.Intrinsic.String.Build("Select * From GCG_3953_Addl_Flds Where SO = '{0}' And Line = '{1}' And Dept ='{2}'",V.Global.sOrder,V.Global.sLine,V.Local.iC,V.Local.sSQL)
+	F.ODBC.Connection!conX.OpenLocalRecordsetRW("rst",V.Local.sSQL)
+'	F.ODBC.conX!rst.Set!User_ID(V.Local.iUserID)
+'	F.ODBC.conX!rst.Set!GS_USER(V.Caller.User)
+	'update based on which type we are on.
+	F.Intrinsic.Control.SelectCase(V.Local.iC)
+		F.Intrinsic.Control.Case(1)
+			F.Intrinsic.Control.If(v.Screen.SS_Form1!mltCSNotes.Text.Trim,<>,"","OR",v.screen.SS_Form1!chkCSApproved.Value,=,1)
+			
+				F.Intrinsic.Control.If(V.ODBC.conX!rst.EOF,=,True)
+					F.ODBC.conX!rst.AddNew
+					F.ODBC.conX!rst.Set!SO(V.Global.sOrder)
+					F.ODBC.conX!rst.Set!Line(V.Global.sLine)
+					F.ODBC.conX!rst.Set!Dept(V.Local.iC)
+				F.Intrinsic.Control.EndIf
+				'customer service
+				F.ODBC.conX!rst.Set!Approved(V.Screen.SS_Form1!chkCSApproved.Value)
+				F.ODBC.conX!rst.Set!Date_Approval(V.Screen.SS_Form1!dtpCSDate.Value)
+				F.ODBC.conX!rst.Set!Comments(V.Screen.SS_Form1!mltCSNotes.Text)
+				F.ODBC.conX!rst.Set!GS_USER(V.Screen.SS_Form1!txtCSUser.Text)
+				f.Intrinsic.Control.If(v.Screen.SS_Form1!txtCSUser.Text.trim,<>,"")
+					F.Global.Security.GetUserId(V.Screen.SS_Form1!txtCSUser.Text,V.Caller.CompanyCode,V.Local.iUserId)
+					F.ODBC.conX!rst.Set!User_ID(V.Local.iUserID)
+				F.Intrinsic.Control.Else
+					F.ODBC.conX!rst.Set!User_ID(-1)
+				F.Intrinsic.Control.EndIf
+				F.ODBC.conX!rst.Update
+	''			F.Intrinsic.Control.If(V.Screen.SS_Form1!chkCSApproved.Value,=,1)
+	'			F.ODBC.conX!rst.Set!User_ID(V.Local.iUserID)
+	'			F.ODBC.conX!rst.Set!GS_USER(V.Caller.User)
+	''			F.Intrinsic.Control.Else
+	'''				F.ODBC.conX!rst.Set!User_ID(-1)
+	''				F.ODBC.conX!rst.Set!GS_USER("")
+	''			F.Intrinsic.Control.EndIf
+			Function.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Case(2)
+			Function.Intrinsic.Control.If(v.Screen.SS_Form1!mltQNotes.Text.Trim,<>,"","OR",v.Screen.SS_Form1!chkQApproved.Value,=,1)
+				F.Intrinsic.Control.If(V.ODBC.conX!rst.EOF,=,True)
+					F.ODBC.conX!rst.AddNew
+					F.ODBC.conX!rst.Set!SO(V.Global.sOrder)
+					F.ODBC.conX!rst.Set!Line(V.Global.sLine)
+					F.ODBC.conX!rst.Set!Dept(V.Local.iC)
+				F.Intrinsic.Control.EndIf
+				'quality
+				F.ODBC.conX!rst.Set!Approved(V.Screen.SS_Form1!chkQApproved.Value)
+				F.ODBC.conX!rst.Set!Date_Approval(V.Screen.SS_Form1!dtpQDate.Value)
+				F.ODBC.conX!rst.Set!Comments(V.Screen.SS_Form1!mltQNotes.Text)
+				F.ODBC.conX!rst.Set!GS_User(V.Screen.SS_Form1!txtQUser.Text)
+				f.Intrinsic.Control.If(v.Screen.SS_Form1!txtQUser.Text.trim,<>,"")
+					F.Global.Security.GetUserId(V.Screen.SS_Form1!txtQUser.Text,V.Caller.CompanyCode,V.Local.iUserId)
+					F.ODBC.conX!rst.Set!User_ID(V.Local.iUserID)
+				F.Intrinsic.Control.Else
+					F.ODBC.conX!rst.Set!User_ID(-1)
+				F.Intrinsic.Control.EndIf
+				F.ODBC.conX!rst.Update
+	'			F.Intrinsic.Control.If(V.Screen.SS_Form1!chkQApproved.Value,=,1)
+	'				F.ODBC.conX!rst.Set!User_ID(V.Local.iUserID)
+	'				F.ODBC.conX!rst.Set!GS_USER(V.Caller.User)
+	'			F.Intrinsic.Control.Else
+	'				F.ODBC.conX!rst.Set!User_ID(-1)
+	'				F.ODBC.conX!rst.Set!GS_USER("")
+	'			F.Intrinsic.Control.EndIf
+			Function.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Case(3)
+			F.Intrinsic.Control.If(v.Screen.SS_Form1!mltENotes.Text.Trim,<>,"","OR",v.screen.SS_Form1!chkEApproved.Value,=,1)
+			
+				F.Intrinsic.Control.If(V.ODBC.conX!rst.EOF,=,True)
+					F.ODBC.conX!rst.AddNew
+					F.ODBC.conX!rst.Set!SO(V.Global.sOrder)
+					F.ODBC.conX!rst.Set!Line(V.Global.sLine)
+					F.ODBC.conX!rst.Set!Dept(V.Local.iC)
+				F.Intrinsic.Control.EndIf
+				'Engineering
+				F.ODBC.conX!rst.Set!Approved(V.Screen.SS_Form1!chkEApproved.Value)
+				F.ODBC.conX!rst.Set!Date_Approval(V.Screen.SS_Form1!dtpEDate.Value)
+				F.ODBC.conX!rst.Set!Comments(V.Screen.SS_Form1!mltENotes.Text)
+				F.ODBC.conX!rst.Set!GS_USER(V.Screen.SS_Form1!txtEUser.Text)
+				f.Intrinsic.Control.If(v.Screen.SS_Form1!txtEUser.Text.trim,<>,"")
+					F.Global.Security.GetUserId(V.Screen.SS_Form1!txtEUser.Text,V.Caller.CompanyCode,V.Local.iUserId)
+					F.ODBC.conX!rst.Set!User_ID(V.Local.iUserID)
+				F.Intrinsic.Control.Else
+					F.ODBC.conX!rst.Set!User_ID(-1)
+				F.Intrinsic.Control.EndIf
+				F.ODBC.conX!rst.Update
+	'			F.Intrinsic.Control.If(V.Screen.SS_Form1!chkEApproved.Value,=,1)
+	'				F.ODBC.conX!rst.Set!User_ID(V.Local.iUserID)
+	'				F.ODBC.conX!rst.Set!GS_USER(V.Caller.User)
+	'			F.Intrinsic.Control.Else
+	'				F.ODBC.conX!rst.Set!User_ID(-1)
+	'				F.ODBC.conX!rst.Set!GS_USER("")
+	'			F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.Case(4)
+				Function.Intrinsic.Control.If(v.Screen.SS_Form1!mltPurNotes.Text.Trim,<>,"","OR",v.screen.SS_Form1!chkPurApproved.value,=,1)
+				
+					F.Intrinsic.Control.If(V.ODBC.conX!rst.EOF,=,True)
+						F.ODBC.conX!rst.AddNew
+						F.ODBC.conX!rst.Set!SO(V.Global.sOrder)
+						F.ODBC.conX!rst.Set!Line(V.Global.sLine)
+						F.ODBC.conX!rst.Set!Dept(V.Local.iC)
+					F.Intrinsic.Control.EndIf
+					'Purchasing
+					F.ODBC.conX!rst.Set!Approved(V.Screen.SS_Form1!chkPurApproved.Value)
+					F.ODBC.conX!rst.Set!Date_Approval(V.Screen.SS_Form1!dtpPurDate.Value)
+					F.ODBC.conX!rst.Set!Comments(V.Screen.SS_Form1!mltPurNotes.Text)
+					F.ODBC.conX!rst.Set!GS_USER(V.Screen.SS_Form1!txtPurUser.Text)
+					f.Intrinsic.Control.If(v.Screen.SS_Form1!txtPurUser.Text.trim,<>,"")
+						F.Global.Security.GetUserId(V.Screen.SS_Form1!txtPurUser.Text,V.Caller.CompanyCode,V.Local.iUserId)
+						F.ODBC.conX!rst.Set!User_ID(V.Local.iUserID)
+					F.Intrinsic.Control.Else
+						F.ODBC.conX!rst.Set!User_ID(-1)
+					F.Intrinsic.Control.EndIf
+					F.ODBC.conX!rst.Update
+				Function.Intrinsic.Control.EndIf
+			Function.Intrinsic.Control.EndIf
+'			F.Intrinsic.Control.If(V.Screen.SS_Form1!chkPurApproved.Value,=,1)
+'				F.ODBC.conX!rst.Set!User_ID(V.Local.iUserID)
+'				F.ODBC.conX!rst.Set!GS_USER(V.Caller.User)
+'			F.Intrinsic.Control.Else
+'				F.ODBC.conX!rst.Set!User_ID(-1)
+'				F.ODBC.conX!rst.Set!GS_USER("")
+'			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Case(5)
+			Function.Intrinsic.Control.If(v.screen.SS_Form1!mltPDNotes.Text.Trim,=,"","OR",v.screen.SS_Form1!chkPDApproved.Value,=,1)
+				F.Intrinsic.Control.If(V.ODBC.conX!rst.EOF,=,True)
+					F.ODBC.conX!rst.AddNew
+					F.ODBC.conX!rst.Set!SO(V.Global.sOrder)
+					F.ODBC.conX!rst.Set!Line(V.Global.sLine)
+					F.ODBC.conX!rst.Set!Dept(V.Local.iC)
+				F.Intrinsic.Control.EndIf
+				'Process Developmetn
+				F.ODBC.conX!rst.Set!Approved(V.Screen.SS_Form1!chkPDApproved.Value)
+				F.ODBC.conX!rst.Set!Date_Approval(V.Screen.SS_Form1!dtpPDDate.Value)
+				F.ODBC.conX!rst.Set!Comments(V.Screen.SS_Form1!mltPDNotes.Text)
+				F.ODBC.conX!rst.Set!GS_User(V.Screen.SS_Form1!txtPDUser.Text)
+				f.Intrinsic.Control.If(v.Screen.SS_Form1!txtPDUser.Text.trim,<>,"")
+					F.Global.Security.GetUserId(V.Screen.SS_Form1!txtPDUser.Text,V.Caller.CompanyCode,V.Local.iUserId)
+					F.ODBC.conX!rst.Set!User_ID(V.Local.iUserID)
+				F.Intrinsic.Control.Else
+					F.ODBC.conX!rst.Set!User_ID(-1)
+				F.Intrinsic.Control.EndIf
+				F.ODBC.conX!rst.Update
+			Function.Intrinsic.Control.EndIf
+			
+'			F.Intrinsic.Control.If(V.Screen.SS_Form1!chkPDApproved.Value,=,1)
+'				F.ODBC.conX!rst.Set!User_ID(V.Local.iUserID)
+'				F.ODBC.conX!rst.Set!GS_USER(V.Caller.User)
+'			F.Intrinsic.Control.Else
+'				F.ODBC.conX!rst.Set!User_ID(-1)
+'				F.ODBC.conX!rst.Set!GS_USER("")
+'			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Case(6)
+			Function.Intrinsic.Control.If(v.Screen.SS_Form1!mltSchedNotes.Text.Trim,<>,"","OR",v.screen.SS_Form1!chkSchedApproved.value,=,1)
+				F.Intrinsic.Control.If(V.ODBC.conX!rst.EOF,=,True)
+					F.ODBC.conX!rst.AddNew
+					F.ODBC.conX!rst.Set!SO(V.Global.sOrder)
+					F.ODBC.conX!rst.Set!Line(V.Global.sLine)
+					F.ODBC.conX!rst.Set!Dept(V.Local.iC)
+				F.Intrinsic.Control.EndIf
+				'Scheduling
+				F.ODBC.conX!rst.Set!Approved(V.Screen.SS_Form1!chkSchedApproved.Value)
+				F.ODBC.conX!rst.Set!Date_Approval(V.Screen.SS_Form1!dtpSchedDate.Value)
+				F.ODBC.conX!rst.Set!Comments(V.Screen.SS_Form1!mltSchedNotes.Text)
+				F.ODBC.conX!rst.Set!GS_User(V.Screen.SS_Form1!txtSchedUser.Text)
+				f.Intrinsic.Control.If(v.Screen.SS_Form1!txtSchedUser.Text.trim,<>,"")
+					F.Global.Security.GetUserId(V.Screen.SS_Form1!txtSchedUser.Text,V.Caller.CompanyCode,V.Local.iUserId)
+					F.ODBC.conX!rst.Set!User_ID(V.Local.iUserID)
+				F.Intrinsic.Control.Else
+					F.ODBC.conX!rst.Set!User_ID(-1)
+				F.Intrinsic.Control.EndIf
+				F.ODBC.conX!rst.Update
+	'			F.Intrinsic.Control.If(V.Screen.SS_Form1!chkSchedApproved.Value,=,1)
+	'				F.ODBC.conX!rst.Set!User_ID(V.Local.iUserID)
+	'				F.ODBC.conX!rst.Set!GS_USER(V.Caller.User)
+	'			F.Intrinsic.Control.Else
+	'				F.ODBC.conX!rst.Set!User_ID(-1)
+	'				F.ODBC.conX!rst.Set!GS_USER("")
+	'			F.Intrinsic.Control.EndIf
+		Function.Intrinsic.Control.EndIf
+		
+	F.Intrinsic.Control.EndSelect
+	F.ODBC.conX!rst.Close
+F.Intrinsic.Control.Next(V.Local.iC)
+F.Intrinsic.Control.UnBlockEvents
+F.Intrinsic.Control.callsub(Ss_form1_unload)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdsave_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3953_FOA_Addl_SO_Ln_Usr_Flds.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Ss_form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.cmdsave_click.end
+
+Program.Sub.Comments.Start
+${$0$}$$}$$}$12:00:00 AM
+Program.Sub.Comments.End
+
